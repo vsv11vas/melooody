@@ -77,11 +77,11 @@ header .header .title-group .authorization button {
   border: 1px solid #fff;
   margin-left: 10px;
   border-radius: 15px;
-  transition: 0.4s;
   font-size: 14px;
   font-weight: 500;
   outline: none;
   padding: 0 30px;
+  transition: 0.4s;
 }
 header .header .title-group .authorization button:hover {
   background-color: #fff;
@@ -144,16 +144,11 @@ header .header .search-group .languages button {
   border: 1px solid #fff;
   margin-left: 10px;
   border-radius: 15px;
-  transition: 0.4s;
   font-size: 14px;
   font-weight: 500;
   outline: none;
   padding: 0 10px;
-}
-header .header .search-group .languages button:hover {
-  background-color: #fff;
   cursor: pointer;
-  color: #2E2D3D;
 }
 header .header .search-group .languages button.active {
   background-color: #fff;

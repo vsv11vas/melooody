@@ -11,15 +11,9 @@
 	border: 1px solid #fff;
 	margin-left: 10px;
 	border-radius: 15px;
-	transition: .4s;
 	font-size: 14px;
 	font-weight: 500;
 	outline: none;
-	&:hover{
-		background-color: #fff;
-		cursor: pointer;
-		color: @blue;
-	}
 }
 
 *, *::before, *::after{
@@ -92,6 +86,12 @@ header{
 				button{
 					.standart-button();
 					padding: 0 30px;
+					transition: .4s;
+					&:hover{
+						background-color: #fff;
+						cursor: pointer;
+						color: @blue;
+					}
 				}
 			}
 		}
@@ -147,6 +147,7 @@ header{
 				button{
 					.standart-button();
 					padding: 0 10px;
+					cursor: pointer;
 					&.active{
 						background-color: #fff;
 						color: @blue;
