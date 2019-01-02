@@ -27,14 +27,14 @@ li {
   list-style-type: none;
 }
 header {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   background-color: #2E2D3D;
   color: #fff;
 }
 header .header hr.header-hr {
   border: 1px solif #fff;
   border-top: none;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 header .header .title-group {
   display: flex;
@@ -89,6 +89,7 @@ header .header .title-group .authorization button:hover {
   color: #2E2D3D;
 }
 header .header .search-group {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -157,6 +158,18 @@ header .header .search-group .languages button:hover {
 header .header .search-group .languages button.active {
   background-color: #fff;
   color: #2E2D3D;
+}
+header nav {
+  padding: 20px 0;
+}
+header nav .nav ul {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .nav ul a {
+  color: #fff;
 }
 main {
   flex: 1 0 auto;

@@ -50,14 +50,14 @@ li{
 }
 
 header{
-	padding: 20px 0;
+	padding: 20px 0 0 0;
 	background-color: @blue;
 	color: #fff;
 	.header{
 		hr.header-hr{
 			border: 1px solif #fff;
 			border-top: none;
-			margin: 20px 0;
+			margin: 20px 0 0 0;
 		}
 		.title-group{
 			display: flex;
@@ -96,6 +96,7 @@ header{
 			}
 		}
 		.search-group{
+			margin-top: 20px;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -150,6 +151,20 @@ header{
 						background-color: #fff;
 						color: @blue;
 					}
+				}
+			}
+		}
+	}
+	nav{
+		padding: 20px 0;
+		.nav{
+			ul{
+				font-size: 14px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				a{
+					color: #fff;
 				}
 			}
 		}
