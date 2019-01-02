@@ -2,6 +2,26 @@
 @blue: #2E2D3D;
 @descr: #C4C4C4;
 
+.standart-button(){
+	background-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+	height: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	border: 1px solid #fff;
+	margin-left: 10px;
+	border-radius: 15px;
+	transition: .4s;
+	font-size: 14px;
+	font-weight: 500;
+	outline: none;
+	&:hover{
+		background-color: #fff;
+		cursor: pointer;
+		color: @blue;
+	}
+}
+
 *, *::before, *::after{
 	box-sizing: border-box;
 	margin: 0;
@@ -34,6 +54,11 @@ header{
 	background-color: @blue;
 	color: #fff;
 	.header{
+		hr.header-hr{
+			border: 1px solif #fff;
+			border-top: none;
+			margin: 20px 0;
+		}
 		.title-group{
 			display: flex;
 			justify-content: space-between;
@@ -65,21 +90,64 @@ header{
 			.authorization{
 				display: flex;
 				button{
-					background-color: transparent;
-					font-family: 'Montserrat', sans-serif;
-					height: 30px;
+					.standart-button();
 					padding: 0 30px;
-					text-transform: uppercase;
-					color: #fff;
-					border: 1px solid #fff;
-					margin-left: 10px;
+				}
+			}
+		}
+		.search-group{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.search-string{
+				input[type=text]{
+					height: 30px;
+					background-color: transparent;
+					width: 250px;
+					padding: 0 15px;
 					border-radius: 15px;
-					transition: .4s;
+					border: 1px solid #fff;
+					font-family: 'Montserrat', sans-serif;
 					font-size: 14px;
-					font-weight: 500;
-					&:hover{
+					outline: none;
+					color: #fff;
+					&::-webkit-input-placeholder{
+						color: @descr;
+					}
+				}
+				button{
+					background-color: transparent;
+					color: #fff;
+					font-size: 14px;
+					border: none;
+					position: relative;
+					left: -34px;
+					outline: none;
+					cursor: pointer;
+				}
+			}
+			.alpha-string{
+				ul{
+					display: flex;
+					li{
+						font-size: 14px;
+						margin-left: 7px;
+						a{
+							color: #fff;
+						}
+						&:last-child{
+							margin-left: 15px;
+						}
+					}
+				}
+			}
+			.languages{
+				display: flex;
+				button{
+					.standart-button();
+					padding: 0 10px;
+					&.active{
 						background-color: #fff;
-						cursor: pointer;
 						color: @blue;
 					}
 				}
