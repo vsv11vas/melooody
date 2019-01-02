@@ -11,7 +11,6 @@
 	border: 1px solid #fff;
 	margin-left: 10px;
 	border-radius: 15px;
-	font-size: 14px;
 	font-weight: 500;
 	outline: none;
 }
@@ -22,15 +21,29 @@
 	padding: 0;
 }
 .container{
-	width: 1140px;
 	margin: 0 auto;
+	@media (min-width: 1200px){
+		width: 1140px;
+	}
+	@media (min-width: 993px) and (max-width: 1199px){
+		width: 960px;
+	}
+	@media (min-width: 769px) and (max-width: 992px){
+		width: 720px;
+	}
+	@media (min-width: 570px) and (max-width: 768px){
+		width: 540px;
+	}
+	@media (max-width: 569px){
+		width: auto;
+	}
 }
 html{
 	height: 100%;
 }
 body{
-	min-width: 1200px;
 	height: 200vh;
+	min-width: 570px;
 	display: flex;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
@@ -38,9 +51,17 @@ body{
 }
 a{
 	text-decoration: none;
+	font-size: 14px;
 }
 li{
 	list-style-type: none;
+	font-size: 14px;
+}
+button{
+	font-size: 14px;
+}
+input{
+	font-size: 14px;
 }
 
 header{
@@ -59,6 +80,9 @@ header{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			a{
+				color: #fff;
+			}
 			.title{
 				text-transform: uppercase;
 				display: flex;
@@ -111,7 +135,6 @@ header{
 					border-radius: 15px;
 					border: 1px solid #fff;
 					font-family: 'Montserrat', sans-serif;
-					font-size: 14px;
 					outline: none;
 					color: #fff;
 					&::-webkit-input-placeholder{
@@ -121,7 +144,6 @@ header{
 				button{
 					background-color: transparent;
 					color: #fff;
-					font-size: 14px;
 					border: none;
 					position: relative;
 					left: -34px;
@@ -136,7 +158,6 @@ header{
 						display: none;
 					}
 					li{
-						font-size: 14px;
 						margin-left: 7px;
 						a{
 							color: #fff;
@@ -177,7 +198,6 @@ header{
 		}
 		.nav{
 			ul{
-				font-size: 14px;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
