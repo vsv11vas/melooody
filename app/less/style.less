@@ -1,5 +1,5 @@
 @bgc: #F2F2F2;
-@blue: #2E2D3A;
+@blue: #2E2D3D;
 @descr: #C4C4C4;
 
 .standart-button(){
@@ -127,6 +127,9 @@ header{
 			align-items: center;
 			justify-content: space-between;
 			.search-string{
+				&.hidden{
+					display: none;
+				}
 				input[type=text]{
 					height: 30px;
 					background-color: transparent;
@@ -152,6 +155,9 @@ header{
 				}
 			}
 			.alpha-string{
+				&.hidden{
+					display: none;
+				}
 				ul{
 					display: flex;
 					&.hidden{
@@ -171,6 +177,9 @@ header{
 			.languages{
 				display: flex;
 				button{
+					&.hidden{
+						display: none;
+					}
 					.standart-button();
 					padding: 0 10px;
 					cursor: pointer;
