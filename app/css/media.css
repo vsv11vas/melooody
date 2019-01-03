@@ -144,8 +144,8 @@
 }
 @media (max-width: 569px) {
   header {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   header .header-main .title-group {
     flex-direction: column;
@@ -208,6 +208,10 @@
     display: flex;
     justify-content: center;
   }
+  header nav .nav .menu button {
+    position: relative;
+    left: -6px;
+  }
   header nav .nav .main-menu {
     display: none;
   }
@@ -222,7 +226,7 @@
     margin: 0;
   }
   main {
-    padding: 0 5px;
+    padding: 0 10px;
   }
   main .main {
     grid-template-columns: 1fr;
