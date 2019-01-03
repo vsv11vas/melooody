@@ -60,7 +60,7 @@ input {
 }
 header {
   padding: 20px 0 0 0;
-  background-color: #2E2D3D;
+  background-color: #2E6D3A;
   color: #fff;
   margin-bottom: 30px;
 }
@@ -122,7 +122,7 @@ header .header .title-group .authorization button {
 header .header .title-group .authorization button:hover {
   background-color: #fff;
   cursor: pointer;
-  color: #2E2D3D;
+  color: #2E6D3A;
 }
 header .header .search-group {
   margin-top: 20px;
@@ -187,13 +187,13 @@ header .header .search-group .languages button {
 }
 header .header .search-group .languages button.active {
   background-color: #fff;
-  color: #2E2D3D;
+  color: #2E6D3A;
 }
 header nav {
   width: 100%;
   padding: 20px 0;
   transition: 0.3s;
-  background-color: #2E2D3D;
+  background-color: #2E6D3A;
 }
 header nav.fixed {
   position: fixed;
