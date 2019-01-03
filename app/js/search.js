@@ -7,8 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
 		openButton.classList.toggle('active');
 		if(j % 2 == 0){
 			menu.style.display = 'block';
+			openButton.innerHTML = 'Закрыть меню'
 		}else{
 			menu.style.display = 'none';
+			openButton.innerHTML = 'Открыть меню'
 		}
 		j++;
 	});
