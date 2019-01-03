@@ -30,7 +30,7 @@
 }
 @media (max-width: 569px) {
   .container {
-    width: auto;
+    width: 540px;
   }
 }
 html {
@@ -64,37 +64,40 @@ header {
   color: #fff;
   margin-bottom: 30px;
 }
-header .header hr.header-hr {
+header .visible {
+  display: block;
+}
+header hr.header-hr {
   border: 1px solif #fff;
   border-top: none;
   margin: 20px 0 0 0;
   position: relative;
 }
-header .header .title-group {
+header .header-main .title-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .header .title-group a {
+header .header-main .title-group a {
   color: #fff;
 }
-header .header .title-group .title {
+header .header-main .title-group .title {
   text-transform: uppercase;
   display: flex;
   align-items: center;
 }
-header .header .title-group .title h1 {
+header .header-main .title-group .title h1 {
   font-size: 28px;
   margin-right: 20px;
 }
-header .header .title-group .title small {
+header .header-main .title-group .title small {
   position: relative;
   bottom: -1px;
   width: 80px;
   font-size: 10px;
   color: #C4C4C4;
 }
-header .header .title-group .title small::before {
+header .header-main .title-group .title small::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -102,10 +105,10 @@ header .header .title-group .title small::before {
   background-color: #C4C4C4;
   transform: translateX(-5px);
 }
-header .header .title-group .authorization {
+header .header-main .title-group .authorization {
   display: flex;
 }
-header .header .title-group .authorization button {
+header .header-main .title-group .authorization button {
   background-color: transparent;
   font-family: 'Montserrat', sans-serif;
   height: 30px;
@@ -117,23 +120,18 @@ header .header .title-group .authorization button {
   font-weight: 500;
   outline: none;
   padding: 0 30px;
-  transition: 0.2s;
-}
-header .header .title-group .authorization button:hover {
-  background-color: #fff;
   cursor: pointer;
-  color: #2E2D3D;
 }
-header .header .search-group {
+header .header-main .search-group {
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .header .search-group .search-string.hidden {
+header .header-main .search-group .search-string.hidden {
   display: none;
 }
-header .header .search-group .search-string input[type=text] {
+header .header-main .search-group .search-string input[type=text] {
   height: 30px;
   background-color: transparent;
   width: 250px;
@@ -144,10 +142,10 @@ header .header .search-group .search-string input[type=text] {
   outline: none;
   color: #fff;
 }
-header .header .search-group .search-string input[type=text]::-webkit-input-placeholder {
+header .header-main .search-group .search-string input[type=text]::-webkit-input-placeholder {
   color: #C4C4C4;
 }
-header .header .search-group .search-string button {
+header .header-main .search-group .search-string button {
   background-color: transparent;
   color: #fff;
   border: none;
@@ -156,28 +154,42 @@ header .header .search-group .search-string button {
   outline: none;
   cursor: pointer;
 }
-header .header .search-group .alpha-string.hidden {
+header .header-main .search-group .search-string button.view {
+  left: 0;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-left: 10px;
+  border-radius: 15px;
+  font-weight: 500;
+  outline: none;
+  padding: 0 15px;
+}
+header .header-main .search-group .alpha-string.hidden {
   display: none;
 }
-header .header .search-group .alpha-string ul {
+header .header-main .search-group .alpha-string ul {
   display: flex;
 }
-header .header .search-group .alpha-string ul.hidden {
+header .header-main .search-group .alpha-string ul.hidden {
   display: none;
 }
-header .header .search-group .alpha-string ul li {
+header .header-main .search-group .alpha-string ul li {
   margin-left: 7px;
 }
-header .header .search-group .alpha-string ul li a {
+header .header-main .search-group .alpha-string ul li a {
   color: #fff;
 }
-header .header .search-group .alpha-string ul li:last-child {
+header .header-main .search-group .alpha-string ul li:last-child {
   margin-left: 15px;
 }
-header .header .search-group .languages {
+header .header-main .search-group .languages {
   display: flex;
 }
-header .header .search-group .languages button {
+header .header-main .search-group .languages button {
   background-color: transparent;
   font-family: 'Montserrat', sans-serif;
   height: 30px;
@@ -191,10 +203,10 @@ header .header .search-group .languages button {
   padding: 0 10px;
   cursor: pointer;
 }
-header .header .search-group .languages button.hidden {
+header .header-main .search-group .languages button.hidden {
   display: none;
 }
-header .header .search-group .languages button.active {
+header .header-main .search-group .languages button.active {
   background-color: #fff;
   color: #2E2D3D;
 }
@@ -212,6 +224,24 @@ header nav.fixed {
 }
 header nav.fixed:hover {
   opacity: 1;
+}
+header nav .nav .menu button {
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-left: 10px;
+  border-radius: 15px;
+  font-weight: 500;
+  outline: none;
+  padding: 0 30px;
+  cursor: pointer;
+}
+header nav .nav .menu button.active {
+  background-color: #fff;
+  color: #2E2D3D;
 }
 header nav .nav ul {
   display: flex;

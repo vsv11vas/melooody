@@ -1,21 +1,24 @@
 window.addEventListener('DOMContentLoaded', () => {
+	let searchBar = document.querySelector('.search-bar');
+	let searchString = document.querySelector('.search-string');
 	let alphaString = document.querySelector('.alpha-string');
-	let languagesButton = document.querySelectorAll('.languages-button');
-	let width = document.body.clientWidth;
+	let langButton = document.querySelectorAll('.languages-button');
 
-	if(width < 992 && width >= 768){
-		alphaString.classList.add('hidden');
-		languagesButton.forEach(function(el){
-			el.classList.add('hidden')
-		});
-		let searchBar = document.querySelector('.search-bar');
-		let searchString = document.querySelector('.search-string');
-		searchBar.addEventListener('click', () => {
-			alphaString.classList.toggle('hidden');
-			searchString.classList.toggle('hidden');
-			languagesButton.forEach(function(el){
-				el.classList.toggle('hidden')
-			});
-		});
-	}
+    let i = 0;
+
+
+	let openButton = document.querySelector('.open-button');
+	let menu = document.querySelector('.main-menu');
+	let j = 0;
+	openButton.addEventListener('click', () => {
+		openButton.classList.toggle('active');
+		if(j % 2 == 0){
+			menu.style.display = 'block';
+		}else{
+			menu.style.display = 'none';
+		}
+		j++;
+	});
+
 });
+

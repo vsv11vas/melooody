@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MELOOODY - аккорды песен</title>
 
 	<link rel="stylesheet" href="css/style.css">
@@ -13,7 +14,7 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header">
+			<div class="header-main">
 				<div class="title-group">
 					<a href="#">
 						<div class="title">
@@ -104,9 +105,6 @@
 						<button class="languages-button">
 							EN
 						</button>
-						<button class="search-bar">
-							<i class="fas fa-bars"></i>
-						</button>
 					</div>
 				</div>
 				<hr class="header-hr">
@@ -114,13 +112,19 @@
 			<nav class="navigation">
 				<div class="container">
 					<div class="nav">
-						<ul class="main-nav">
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">Топ песен</a></li>
-							<li><a href="#">Топ исполнителей</a></li>
-							<li><a href="#">Добавить подбор</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
+						<div class="menu">
+							<button class="open-button">Открыть меню</button>
+						</div>
+						<div class="main-menu">
+							<hr class="header-hr hr-menu">
+							<ul class="main-nav">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Топ песен</a></li>
+								<li><a href="#">Топ исполнителей</a></li>
+								<li><a href="#">Добавить подбор</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</nav>
