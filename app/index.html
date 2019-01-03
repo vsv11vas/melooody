@@ -2,9 +2,11 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MELOOODY - аккорды песен</title>
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,300i,400,400i,500,500i,600,700,800,900&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -12,7 +14,7 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header">
+			<div class="header-main">
 				<div class="title-group">
 					<a href="#">
 						<div class="title">
@@ -110,13 +112,19 @@
 			<nav class="navigation">
 				<div class="container">
 					<div class="nav">
-						<ul class="main-nav">
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">Топ песен</a></li>
-							<li><a href="#">Топ исполнителей</a></li>
-							<li><a href="#">Добавить подбор</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
+						<div class="menu">
+							<button class="open-button">Открыть меню</button>
+						</div>
+						<div class="main-menu">
+							<hr class="header-hr hr-menu">
+							<ul class="main-nav">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Топ песен</a></li>
+								<li><a href="#">Топ исполнителей</a></li>
+								<li><a href="#">Добавить подбор</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -132,5 +140,6 @@
 
 	<script src="js/langs.js"></script>
 	<script src="js/scroll.js"></script>
+	<script src="js/search.js"></script>
 </body>
 </html>
