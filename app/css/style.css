@@ -30,15 +30,13 @@
 }
 @media (max-width: 569px) {
   .container {
-    width: 540px;
+    width: auto;
   }
 }
 html {
   height: 100%;
 }
 body {
-  height: 200vh;
-  min-width: 570px;
   display: flex;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
@@ -254,6 +252,140 @@ header nav .nav ul a {
 main {
   flex: 1 0 auto;
 }
+main .main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 40px;
+}
+main .main aside {
+  width: 250px;
+}
+main .main aside .aside .top-singers-aside .title h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #2E2D3D;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+main .main aside .aside .top-singers-aside .block {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+main .main aside .aside .top-singers-aside .block ul li {
+  position: relative;
+  margin-bottom: 15px;
+}
+main .main aside .aside .top-singers-aside .block ul li:last-child {
+  margin: 0;
+}
+main .main aside .aside .top-singers-aside .block ul li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main aside .aside .top-singers-aside .block ul li a h4 {
+  color: #2E2D3D;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .main .content {
+  margin-bottom: 20px;
+}
+main .main .content .title h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #2E2D3D;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+main .main .content .blocks-song {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .main .content .blocks-song .block {
+  margin-bottom: 20px;
+  max-width: 415px;
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+main .main .content .blocks-song .block .image {
+  margin-right: 10px;
+}
+main .main .content .blocks-song .block .image img {
+  height: 102px;
+  width: 102px;
+  object-fit: cover;
+}
+main .main .content .blocks-song .block .description {
+  width: 100%;
+}
+main .main .content .blocks-song .block .description .top-string {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+main .main .content .blocks-song .block .description .top-string h4 {
+  font-size: 14px;
+  color: #2E2D3D;
+  font-weight: 400;
+}
+main .main .content .blocks-song .block .description .top-string i {
+  font-size: 12px;
+  color: #2E2D3D;
+  margin-right: 7px;
+}
+main .main .content .blocks-song .block .description .top-string .likes {
+  display: flex;
+  align-items: center;
+}
+main .main .content .blocks-song .block .description .singer-name {
+  margin-bottom: 20px;
+}
+main .main .content .blocks-song .block .description .singer-name h4 {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #2E2D3D;
+}
+main .main .content .blocks-song .block .description .singer-name p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #2E2D3D;
+}
+main .main .content .blocks-song .block .description .link-song p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #2E2D3D;
+}
 footer {
+  margin-top: 50px;
   flex: 0 0 auto;
+  height: 42px;
+  background-color: #2E2D3D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer .copy small {
+  color: #fff;
+  font-size: 12px;
 }

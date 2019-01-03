@@ -30,6 +30,7 @@
 				display: none;
 			}
 			.main-menu{
+				display: block !important; 
 				hr{
 					display: none;
 				}
@@ -55,8 +56,22 @@
 				display: none;
 			}
 			.main-menu{
+				display: block !important; 
 				hr{
 					display: none;
+				}
+			}
+		}
+	}
+	main{
+		.main{
+			.content{
+				.new{
+					.blocks-song{
+						.block{
+							max-width: 325px;
+						}
+					}
 				}
 			}
 		}
@@ -93,8 +108,23 @@
 				display: none;
 			}
 			.main-menu{
+				display: block !important; 
 				hr{
 					display: none;
+				}
+			}
+		}
+	}
+	main{
+		.main{
+			.content{
+				.new{
+					.blocks-song{
+						flex-direction: column;
+						.block{
+							max-width: 430px;
+						}
+					}
 				}
 			}
 		}
@@ -159,16 +189,63 @@
 			}
 		}
 	}
+	main{
+		.main{
+			grid-template-columns: 1fr;
+			aside{
+				grid-row: 2;
+				width: 540px;
+			}
+			.content{
+				grid-row: 1;
+				.new{
+					.blocks-song{
+						flex-direction: column;
+						.block{
+							max-width: 540px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 
 @media (max-width: 569px){
 	header{
+		padding-left: 5px;
+		padding-right: 5px;
 		.header-main{
 			.title-group{
+				flex-direction: column;
 				.title{
 					small{
 						display: none;
+					}
+					h1{
+						margin: 0;
+						margin-bottom: 20px;
+						position: relative;
+						&::after{
+							content: '';
+							position: absolute;
+							width: 100%;
+							height: 1px;
+							background-color: #fff;
+							left: 0;
+							bottom: 0;
+						}
+					}
+				}
+				.authorization{
+					flex-direction: column;
+					button{
+						position: relative;
+						left: -6px;
+						&:first-child{
+							margin-bottom: 5px;
+						}
 					}
 				}
 			}
@@ -209,6 +286,28 @@
 							&:last-child{
 								margin: 0;
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+	main{
+		padding: 0 5px;
+		.main{
+			grid-template-columns: 1fr;
+			aside{
+				grid-row: 2;
+				width: auto;
+			}
+			.content{
+				grid-row: 1;
+				.new{
+					.blocks-song{
+						flex-direction: column;
+						.block{
+							width: auto;
+							max-width: 540px;
 						}
 					}
 				}
