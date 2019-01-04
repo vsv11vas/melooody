@@ -89,6 +89,7 @@ html{
 	height: 100%;
 }
 body{
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
@@ -285,6 +286,7 @@ main{
 		grid-column-gap: 40px;
 		aside{
 			width: 250px;
+			margin-bottom: 40px;
 			.aside{
 				.top-singers-aside{
 					.title{
@@ -349,7 +351,7 @@ main{
 						}
 					}
 					.description{
-						width: 100%;
+						width: 273px;
 						.top-string{
 							display: flex;
 							justify-content: space-between;
@@ -396,6 +398,43 @@ main{
 								text-overflow: ellipsis;
 								a{
 									color: @blue;
+								}
+							}
+						}
+					}
+				}
+			}
+			.table-block{
+				margin-bottom: 20px;
+				.block-top-singer{
+					ul{
+						li{
+							display: flex;
+							justify-content: space-between;
+							max-width: 850px;
+							.block();
+							margin-bottom: 10px;
+							&:last-child{
+								margin: 0;
+							}
+							a{
+								color: @blue;
+								font-weight: 600;
+								white-space: nowrap;
+								overflow: hidden;
+								text-overflow: ellipsis;
+							}
+							.stars{
+								margin-left: 10px;
+								display: flex;
+								align-items: center;
+								color: @blue;
+								i{
+									font-size: 12px;
+									margin-right: 7px;
+								}
+								h4{
+									font-size: 14px;
 								}
 							}
 						}

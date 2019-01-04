@@ -63,6 +63,7 @@ html {
   height: 100%;
 }
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
@@ -285,6 +286,7 @@ main .main {
 }
 main .main aside {
   width: 250px;
+  margin-bottom: 40px;
 }
 main .main aside .aside .top-singers-aside .title h3 {
   text-transform: uppercase;
@@ -358,7 +360,7 @@ main .main .content .blocks-song .block .image img {
   object-fit: cover;
 }
 main .main .content .blocks-song .block .description {
-  width: 100%;
+  width: 273px;
 }
 main .main .content .blocks-song .block .description .top-string {
   display: flex;
@@ -406,6 +408,43 @@ main .main .content .blocks-song .block .description .link-song p {
 }
 main .main .content .blocks-song .block .description .link-song p a {
   color: #2E2D3D;
+}
+main .main .content .table-block {
+  margin-bottom: 20px;
+}
+main .main .content .table-block .block-top-singer ul li {
+  display: flex;
+  justify-content: space-between;
+  max-width: 850px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+main .main .content .table-block .block-top-singer ul li:last-child {
+  margin: 0;
+}
+main .main .content .table-block .block-top-singer ul li a {
+  color: #2E2D3D;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .main .content .table-block .block-top-singer ul li .stars {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  color: #2E2D3D;
+}
+main .main .content .table-block .block-top-singer ul li .stars i {
+  font-size: 12px;
+  margin-right: 7px;
+}
+main .main .content .table-block .block-top-singer ul li .stars h4 {
+  font-size: 14px;
 }
 footer {
   margin-top: 50px;

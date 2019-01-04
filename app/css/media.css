@@ -28,6 +28,12 @@
   main .main .content .main-block .blocks-song .block {
     max-width: 325px;
   }
+  main .main .content .main-block .blocks-song .block .description {
+    width: 183px;
+  }
+  main .main .content .table-block .block-top-singer ul li {
+    max-width: 670px;
+  }
 }
 @media (min-width: 769px) and (max-width: 992px) {
   header .header-main .search-group .search-string {
@@ -70,6 +76,12 @@
     flex-direction: column;
   }
   main .main .content .main-block .blocks-song .block {
+    max-width: 430px;
+  }
+  main .main .content .main-block .blocks-song .block .description {
+    width: 288px;
+  }
+  main .main .content .table-block .block-top-singer ul li {
     max-width: 430px;
   }
 }
@@ -140,6 +152,12 @@
   }
   main .main .content .main-block .blocks-song .block {
     max-width: 540px;
+  }
+  main .main .content .main-block .blocks-song .block .description {
+    width: 398px;
+  }
+  main .main .content .table-block .block-top-singer ul li {
+    max-width: 670px;
   }
 }
 @media (max-width: 569px) {
@@ -244,5 +262,9 @@
   main .main .content .main-block .blocks-song .block {
     width: auto;
     max-width: 540px;
+  }
+  main .main .content .main-block .blocks-song .block .description {
+    max-width: 398px;
+    width: 100%;
   }
 }
