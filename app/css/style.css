@@ -1,3 +1,29 @@
+::-webkit-scrollbar-button {
+  background-image: url('');
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  background-color: #bfbfbf;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #4f4d69;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #656386;
+}
+::-webkit-resizer {
+  background-image: url('');
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 0px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
 *,
 *::before,
 *::after {
@@ -298,6 +324,9 @@ main .main aside .aside .top-singers-aside .block ul li a h4 {
 main .main .content {
   margin-bottom: 20px;
 }
+main .main .content .main-block {
+  margin-bottom: 20px;
+}
 main .main .content .title h3 {
   text-transform: uppercase;
   font-size: 16px;
@@ -374,6 +403,8 @@ main .main .content .blocks-song .block .description .link-song p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+main .main .content .blocks-song .block .description .link-song p a {
   color: #2E2D3D;
 }
 footer {

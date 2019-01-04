@@ -25,7 +25,7 @@
   header nav .main-menu hr {
     display: none;
   }
-  main .main .content .new .blocks-song .block {
+  main .main .content .main-block .blocks-song .block {
     max-width: 325px;
   }
 }
@@ -66,10 +66,10 @@
   header nav .main-menu hr {
     display: none;
   }
-  main .main .content .new .blocks-song {
+  main .main .content .main-block .blocks-song {
     flex-direction: column;
   }
-  main .main .content .new .blocks-song .block {
+  main .main .content .main-block .blocks-song .block {
     max-width: 430px;
   }
 }
@@ -135,10 +135,10 @@
   main .main .content {
     grid-row: 1;
   }
-  main .main .content .new .blocks-song {
+  main .main .content .main-block .blocks-song {
     flex-direction: column;
   }
-  main .main .content .new .blocks-song .block {
+  main .main .content .main-block .blocks-song .block {
     max-width: 540px;
   }
 }
@@ -238,10 +238,10 @@
   main .main .content {
     grid-row: 1;
   }
-  main .main .content .new .blocks-song {
+  main .main .content .main-block .blocks-song {
     flex-direction: column;
   }
-  main .main .content .new .blocks-song .block {
+  main .main .content .main-block .blocks-song .block {
     width: auto;
     max-width: 540px;
   }
