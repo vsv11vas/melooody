@@ -1,3 +1,7 @@
+button,
+input {
+  outline: none;
+}
 ::-webkit-scrollbar-button {
   background-image: url('');
   background-repeat: no-repeat;
@@ -326,6 +330,59 @@ main .main aside .aside .top-singers-aside .block ul li a h4 {
 main .main .content {
   margin-bottom: 20px;
 }
+main .main .content .form-block .register-user {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+main .main .content .form-block .register-user .form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+main .main .content .form-block .register-user .form .textplace > h3 {
+  color: #2E2D3D;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+main .main .content .form-block .register-user .form .textplace input[type="text"],
+main .main .content .form-block .register-user .form .textplace input[type="email"],
+main .main .content .form-block .register-user .form .textplace input[type="password"] {
+  height: 30px;
+  width: 405px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid #2E2D3D;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #2E2D3D;
+  padding: 0 15px;
+}
+main .main .content .form-block .register-user .form-button {
+  margin-bottom: 20px;
+}
+main .main .content .form-block .register-user .btn-form {
+  background-color: #2E2D3D;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  height: 30px;
+  padding: 0 30px;
+  border-radius: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+main .main .content .form-block .register-user .sign-in p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
 main .main .content .main-block {
   margin-bottom: 20px;
 }
@@ -335,6 +392,24 @@ main .main .content .title h3 {
   color: #2E2D3D;
   font-weight: 600;
   margin-bottom: 20px;
+}
+main .main .content .artist-title > .like {
+  margin-bottom: 20px;
+}
+main .main .content .artist-title > .like button {
+  background-color: transparent;
+  height: 30px;
+  border: 1px solid #2E2D3D;
+  padding: 0 15px;
+  border-radius: 15px;
+  font-family: 'Montserrat';
+  color: #2E2D3D;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+main .main .content .artist-title > .like button i {
+  margin-left: 10px;
 }
 main .main .content .blocks-song {
   display: flex;
@@ -411,6 +486,15 @@ main .main .content .blocks-song .block .description .link-song p a {
 }
 main .main .content .table-block {
   margin-bottom: 20px;
+}
+main .main .content .table-block .artist-title h3 > i {
+  font-size: 12px;
+  position: relative;
+  top: -1px;
+}
+main .main .content .table-block .artist-title .like > button.active {
+  background-color: #2E2D3D;
+  color: #fff;
 }
 main .main .content .table-block .block-top-singer ul li {
   display: flex;

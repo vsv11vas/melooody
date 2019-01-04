@@ -25,6 +25,24 @@
   header nav .main-menu hr {
     display: none;
   }
+  main .main .content .form-block .register-user .form .textplace input[type="text"],
+  main .main .content .form-block .register-user .form .textplace input[type="email"],
+  main .main .content .form-block .register-user .form .textplace input[type="password"] {
+    width: 315px;
+  }
+  main .main .content .form-block .register-user .form-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main .main .content .form-block .register-user .sign-in {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .main .content .form-block .register-user .btn-form {
+    width: 100%;
+  }
   main .main .content .main-block .blocks-song .block {
     max-width: 325px;
   }
@@ -71,6 +89,19 @@
   }
   header nav .main-menu hr {
     display: none;
+  }
+  main .main .content .form-block .register-user .form-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main .main .content .form-block .register-user .sign-in {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .main .content .form-block .register-user .btn-form {
+    width: 100%;
   }
   main .main .content .main-block .blocks-song {
     flex-direction: column;
@@ -147,6 +178,24 @@
   main .main .content {
     grid-row: 1;
   }
+  main .main .content .form-block .register-user .form .textplace input[type="text"],
+  main .main .content .form-block .register-user .form .textplace input[type="email"],
+  main .main .content .form-block .register-user .form .textplace input[type="password"] {
+    width: 510px;
+  }
+  main .main .content .form-block .register-user .form-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main .main .content .form-block .register-user .sign-in {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .main .content .form-block .register-user .btn-form {
+    width: 100%;
+  }
   main .main .content .main-block .blocks-song {
     flex-direction: column;
   }
@@ -200,7 +249,7 @@
     display: flex;
   }
   header .header-main .search-group .search-string input[type=text] {
-    width: 540px;
+    width: 510px;
   }
   header .header-main .search-group .search-string button {
     left: 0;
@@ -255,6 +304,27 @@
   }
   main .main .content {
     grid-row: 1;
+  }
+  main .main .content .form-block .register-user .form {
+    flex-direction: column;
+  }
+  main .main .content .form-block .register-user .form .textplace input[type="text"],
+  main .main .content .form-block .register-user .form .textplace input[type="email"],
+  main .main .content .form-block .register-user .form .textplace input[type="password"] {
+    width: 100%;
+  }
+  main .main .content .form-block .register-user .form-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main .main .content .form-block .register-user .sign-in {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .main .content .form-block .register-user .btn-form {
+    width: 100%;
   }
   main .main .content .main-block .blocks-song {
     flex-direction: column;
